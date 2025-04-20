@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/volunteer.css">
+</head>
+<body>
+    <main>
+        <form action="/volunteer/volunteer" method="post">
+            <div class="left">
+                <h1>volunteer </h1>
+                <h2>General Information of volunteer</h2>
+                <input type="text" placeholder="Name" name="name">
+                <input type="number" placeholder="Contact" name="contact">
+                <input type="email" placeholder="Email" name="email">
+                <input type="text" placeholder="City / Area" name="city">
+            </div>
+            
+            
+            <div class="right">
+                
+                <textarea placeholder="Why do you want to volunteer ?" name="textarea"></textarea>
+
+                <div class="radio">
+                    <h4 style="font-family: 'font-1'; color: white;">Have a Vechicle for Pick Up Donor's foods ?</h4>
+                    <input type="radio" name="haveVehicle" value="yes"> Yes
+                    <input type="radio" name="haveVehicle" value="no"> No
+                </div>
+
+                <button class="btnn" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

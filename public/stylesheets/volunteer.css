@@ -1,0 +1,130 @@
+/* @font-face {
+    font-family: 'font-1';
+    src: url('./Nunito-VariableFont_wght.ttf');
+} */
+
+@font-face {
+    font-family: 'font-1';
+    src: url('../fonts/Nunito-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(142, 214, 238);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+
+form > .right {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(92, 160, 255);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    display: flex;
+    gap: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form > .left {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left > input {
+    width: 80%;
+    height: 8%;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 1.5px solid black;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.left > h2 {
+    font-family: 'font-1';
+    color: rgb(102, 196, 255);
+    border-bottom: 3px solid rgb(102, 196, 255);
+}
+
+.right > textarea {
+    width: 80%;
+    height: 15%;
+    resize: none;
+    padding-top: 15px;
+    padding-left: 15px;
+    border: none;
+    border-bottom: 1.5px solid white;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+}
+
+.right > textarea::placeholder {
+    color: white;
+}
+
+.radio {
+    width: 80%;
+    display: flex;
+    color: white;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.left > h1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: 'font-1';
+    font-size: 23px;
+    color: rgb(2, 114, 183);
+    border-bottom: 2.5px solid rgb(2, 114, 183);
+}
+
+.btnn {
+    padding: 12px 45px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+}

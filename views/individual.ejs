@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/individual.css">
+</head>
+<body>
+    <main>
+        <form action="/individual/individual" method="post">
+            <div class="right">
+                <h2>General Information</h2>
+                <input type="text" placeholder="Name / Organisation Name" name="name">
+                <input type="number" placeholder="Contact Number" name="contactNumber">
+                <input type="email" placeholder="Email Address" name="email">
+                <input type="text" placeholder="Pick Up Address" name="address">
+
+                <h1 class="head">Individual Donar</h1>
+            </div>
+
+            <div class="left">
+                <h2>Food Information</h2>
+                <input type="text" placeholder="Quantity of Food" name="quantityOfFood">
+                <input type="text" placeholder="Food descriptions" name="foodDescription">
+                <input type="number" placeholder="Expiry Date" name="expiryDate">
+                <input type="text" placeholder="Any Special Instruction">
+
+                <div class="radio">
+                    <h4 style="font-family: 'font-1'; color: rgb(227, 227, 227);;">Type of Food (Veg or Non-veg)</h4>
+                    <input type="radio" name="foodType" value="veg"> veg
+                    <input type="radio" name="foodType" value="non-veg"> non-veg
+                </div>
+
+                <div>
+                    <input type="checkbox">
+                    <h3>I do accept the <span>Terms and Condtions</span> of your site.</h3>
+                </div>
+
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+

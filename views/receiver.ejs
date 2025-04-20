@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/receiver.css">
+</head>
+<body>
+    <main>
+        <form action="/receiver/receiver" method="post">
+            <div class="left">
+                <h1>Receiver </h1>
+                <h2>General Information of volunteer</h2>
+                <input type="text" placeholder="Name or Organisation Name" name="name">
+                <input type="text" placeholder="Contact Number" name="number">
+                <input type="email" placeholder="Email Address" name="email">
+                <input type="text" placeholder="Address" name="address">
+            </div>
+            
+            
+            <div class="right">
+                
+                <textarea placeholder="Which volunteer Position You want ?" name="textarea"></textarea>
+
+                <div class="radio">
+                    <h4 style="font-family: 'font-1'; color: white;">Food Type ?</h4>
+                    <input type="radio" name="foodType" value="veg"> Veg
+                    <input type="radio" name="foodType" value="non-veg"> Non-veg
+                </div>
+
+                <div class="radio">
+                    <h4 style="font-family: 'font-1'; color: white;">Type of Food Req ?</h4>
+                    <input type="radio" name="foodRequirementType" value="cooked"> cooked
+                    <input type="radio" name="foodRequirementType" value="uncooked"> Uncooked
+                    <input type="radio" name="foodRequirementType" value="Packaged"> Packaged
+                </div>
+                <button class="btnn" type="submit">Submit</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
+
+
